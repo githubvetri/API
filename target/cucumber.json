@@ -1,0 +1,689 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Get user logtoken from user login",
+        "description": "",
+        "id": "login-module-api-automation;get-user-logtoken-from-user-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 564001200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add headers",
+            "match": {
+              "location": "LoginStep.user_add_headers()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2631408100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User send \"POST\" request for login endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "LoginStep.user_send_request_for_login_endpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1299500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "CommonStep.user_verify_the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 230007300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify the response body firstname present as \"VENKATACHALAM R\" and the logtoken saved",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"VENKATACHALAM R\"",
+                  "offset": 51
+                }
+              ],
+              "location": "LoginStep.user_verify_the_response_body_firstname_present_as_and_the_logtoken_saved(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login module API automation",
+    "description": "",
+    "id": "login-module-api-automation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/TC1_Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "TC_1 User should add address",
+        "description": "",
+        "id": "address-module-api-automation;tc-1-user-should-add-address;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 683300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should add headers",
+            "match": {
+              "location": "AddressStep.user_should_add_headers()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 84735300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should add  \"Raj\" , \"Khundra\", \"1234567898\", \"apartment\", \"33\", \"3378\", \"101\", \"202020\", \"64/63 partap nagar\"and\"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Raj\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Khundra\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"1234567898\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"apartment\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"33\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"3378\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"101\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"202020\"",
+                  "offset": 84
+                },
+                {
+                  "val": "\"64/63 partap nagar\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"home\"",
+                  "offset": 117
+                }
+              ],
+              "location": "AddressStep.user_should_add_and(String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1276145600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should send \"POST\" request for address endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddressStep.user_should_send_request_for_address_endpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 191100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "CommonStep.user_verify_the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3956800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should verify the response body message present as \"Address added successfully\" and get the address Id saved",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address added successfully\"",
+                  "offset": 56
+                }
+              ],
+              "location": "AddressStep.user_should_verify_the_response_body_message_present_as_and_get_the_address_Id_saved(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddAddress"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "TC_2 User should update the address",
+        "description": "",
+        "id": "address-module-api-automation;tc-2-user-should-update-the-address;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 507400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should add header",
+            "match": {
+              "location": "AddressStep.user_should_add_header()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7711300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should add required data for updating the address  \"Vetri\" , \"Hani\", \"8220260322\", \"apartment\", \"105\", \"52\", \"102\", \"624765\", \"20, Driftwood Drive, san Antonio\"and \"Home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vetri\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"Hani\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"8220260322\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"apartment\"",
+                  "offset": 88
+                },
+                {
+                  "val": "\"105\"",
+                  "offset": 101
+                },
+                {
+                  "val": "\"52\"",
+                  "offset": 108
+                },
+                {
+                  "val": "\"102\"",
+                  "offset": 114
+                },
+                {
+                  "val": "\"624765\"",
+                  "offset": 121
+                },
+                {
+                  "val": "\"20, Driftwood Drive, san Antonio\"",
+                  "offset": 131
+                },
+                {
+                  "val": "\"Home\"",
+                  "offset": 169
+                }
+              ],
+              "location": "AddressStep.user_should_add_required_data_for_updating_the_address_and(String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1214215600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should send \"PUT\" request for AddAddress endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddressStep.user_should_send_request_for_AddAddress_endpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "CommonStep.user_verify_the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2485500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should verify the response body update address message present as \"Address updated successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address updated successfully\"",
+                  "offset": 71
+                }
+              ],
+              "location": "AddressStep.user_should_verify_the_response_body_update_address_message_present_as(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddAddress"
+          },
+          {
+            "name": "@UpdateAddress"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "TC_3 User should get the addresses",
+        "description": "",
+        "id": "address-module-api-automation;tc-3-user-should-get-the-addresses",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 342300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should add header",
+            "match": {
+              "location": "AddressStep.user_should_add_header()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 410100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User should enter addressId to get the addresses",
+            "match": {
+              "location": "AddressStep.user_should_enter_addressId_to_get_the_addresses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1225441200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User should send \"GET\" request for UpdateAddress endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddressStep.user_should_send_request_for_UpdateAddress_endpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 228100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "CommonStep.user_verify_the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13754800,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User should verify the response body Addaddress message present as \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 67
+                }
+              ],
+              "location": "AddressStep.user_should_verify_the_response_body_Addaddress_message_present_as(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddAddress"
+          },
+          {
+            "name": "@GetAddress"
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "TC_4 User should delete the address",
+        "description": "",
+        "id": "address-module-api-automation;tc-4-user-should-delete-the-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 473800,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User should add header",
+            "match": {
+              "location": "AddressStep.user_should_add_header()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 289700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User should enter addressid for deleting the address",
+            "match": {
+              "location": "AddressStep.user_should_enter_addressid_for_deleting_the_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1212304600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User should send \"DELETE\" request for login endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AddressStep.user_should_send_request_for_login_endpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 211200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "CommonStep.user_verify_the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2626100,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User should verify the response body delete address message present as \"Address deleted Successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address deleted Successfully\"",
+                  "offset": 71
+                }
+              ],
+              "location": "AddressStep.user_should_verify_the_response_body_delete_address_message_present_as(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddAddress"
+          },
+          {
+            "name": "@DeleteAddress"
+          }
+        ]
+      }
+    ],
+    "name": "Address module API automation",
+    "description": "",
+    "id": "address-module-api-automation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/TC2_Address.feature",
+    "tags": [
+      {
+        "name": "@AddAddress",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User should change the profile picture",
+        "description": "",
+        "id": "profile-module-api-automation;user-should-change-the-profile-picture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7055100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should add the headers",
+            "match": {
+              "location": "ChangeProfileStep.userShouldAddTheHeaders()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3165241500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should send \"POST\" request for Updateprofilepic endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 17
+                }
+              ],
+              "location": "ChangeProfileStep.userShouldSendRequestForUpdateprofilepicEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "CommonStep.user_verify_the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7079300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should verify the response body of update profilepic message present as \"Profile updated Successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Profile updated Successfully\"",
+                  "offset": 77
+                }
+              ],
+              "location": "ChangeProfileStep.userShouldVerifyTheResponseBodyOfUpdateProfilepicMessagePresentAs(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProfilePic"
+          }
+        ]
+      }
+    ],
+    "name": "Profile module API Automation",
+    "description": "",
+    "id": "profile-module-api-automation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/TC3_ChangeProfile.feature",
+    "tags": [
+      {
+        "name": "@ProfilePic",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
